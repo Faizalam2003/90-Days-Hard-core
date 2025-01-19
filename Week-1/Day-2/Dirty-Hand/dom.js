@@ -126,6 +126,7 @@ window.addEventListener('keydown', (event) => {
     console.log(`You pressed the ${event.key} key`);
 })
 
+console.log("hello")
 
 
 
