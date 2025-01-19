@@ -1,5 +1,3 @@
-
-
 // 1 - Selecting Elements
 
 
@@ -121,17 +119,53 @@
 
 const keypressDisplay = document.getElementById('keypressDisplay');
 
-window.addEventListener('keydown', (event) => {
-    keypressDisplay.textContent = `You pressed the ${event.key} key`;
-    console.log(`You pressed the ${event.key} key`);
+// window.addEventListener('keydown', (event) => {
+//     keypressDisplay.textContent = `You pressed the ${event.key} key`;
+//     console.log(`You pressed the ${event.key} key`);
+// })
+
+
+window.addEventListener('keydown', (e)=>{
+    keypressDisplay.textContent = `You pressed the ${e.key} key`;
+    console.log(`You pressed the ${e.key} key`);
 })
 
-console.log("hello") 
+
+
+//hide and show the content 
+
+const heading = document.getElementById('heading');
+const btn  = document.getElementById('btn');
+
+btn.addEventListener('click',()=>{
+  
+    if(heading.style.display === 'none'){
+        heading.style.display = 'block';
+    }else{
+        heading.style.display = 'none';
+    }
+})
 
 
 
+// Read More/Less functionality
+const btnRead = document.getElementById('btnRead');
+const moreText = document.querySelector('.more-text');
 
 
+btnRead.addEventListener("click", ()=>{
+    //this line add the click eventlister to the button
+    //when the button is clicked it will execute the function insid the curly braces 
 
+    if(moreText.style.display === 'none'){
+        //chek the conditions and change into the inline 
 
+        moreText.style.display = 'inline';
+        btnRead.textContent = 'Read Less';
+    }else{
+        //chek the conditions and change into the none
 
+        moreText.style.display = 'none';
+        btnRead.textContent = 'Read More';
+    }
+})
