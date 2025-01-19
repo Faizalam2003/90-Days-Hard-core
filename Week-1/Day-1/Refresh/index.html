@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+      <header>
+          <nav>
+            <ul>
+                <li><a href="#html">HTML </a></li>
+                <li><a href="#css">CSS </a></li>
+                <li><a href="#javascript">JAVASCRIPT </a></li>  
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="html">
+            <h1>HTML Fundamentals</h1>
+            <div class="card">
+                <h2>Semantic HTML Elements</h2>
+                <ul>
+                    <li>header - For top section</li>
+                    <li>nav - For navigation</li>
+                    <li>main - Primary content</li>
+                    <li>section - Thematic grouping</li>
+                    <li>article - Independent content</li>
+                    <li>footer - Bottom section</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Forms & Input</h2>
+                <form id="demoForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="css">
+            <h1>CSS Concepts</h1>
+            <div class="card">
+                <h2>Flexbox Demo</h2>
+                <div class="flex-container">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Grid Demo</h2>
+                <div class="grid-container">
+                    <div class="grid-item">A</div>
+                    <div class="grid-item">B</div>
+                    <div class="grid-item">C</div>
+                    <div class="grid-item">D</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="javascript">
+            <h1>JavaScript Examples</h1>
+            <div class="card">
+                <h2>DOM Manipulation</h2>
+                <button id="themeToggle">Toggle Dark Mode</button>
+                <div id="counter">
+                    <h3>Counter: <span id="count">0</span></h3>
+                    <button id="increment">Increment</button>
+                    <button id="decrement">Decrement</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>API Integration</h2>
+                <div id="userList">
+                    <button id="loadUsers">Load Users</button>
+                    <ul id="users"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for learning modern web development</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
