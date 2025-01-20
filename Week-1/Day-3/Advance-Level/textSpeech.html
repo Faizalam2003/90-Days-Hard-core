@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to speech convert</title>
+</head>
+<body>
+
+
+    <h2>Text to speech convert</h2>
+    <input type="text" placeholder="Write here ">
+    <button id="speak">speak</button>
+
+    <script>
+        const speakButton = document.getElementById('speak');
+        const input = document.querySelector('input');
+        let isSpeaking = true;
+
+        const textToSpeech = ()=>{
+            const synth = window.speechSynthesis;
+            const text  = input.value;
+            const utterance = new SpeechSynthesisUtterance(text);
+            synth.speak(utterance);
+
+
+            if(synth.speaking && isSpeaking){
+                speakButton.innerText = 'Pause';
+                synth.resume();
+                isSpeaking = false;
+            }else{
+                speakButton.innerText = 'play';
+                synth.resume();
+                isSpeaking = true;
+            }
+        }
+
+        speakButton.addEventListener('click',textToSpeech);
+        
+    </script>
+</body>
+</html>
