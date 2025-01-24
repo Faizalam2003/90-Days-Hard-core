@@ -1,37 +1,34 @@
 import React from 'react'
 import Circle from './componets/Circle'
+import Banner from './componets/Banner';
+import Card from './componets/Card';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
+import Cart from './pages/Cart';
 
 const App = () => {
   const items = [
     {
       imageUrl: "/images/jacket.jpg",
-      title: "Jackets",
+      title: "Jacket Collection",
       link: "#"
-    },
-    {
-    //   imageUrl: "/images/tshirt.jpg",
-    //   title: "T-Shirts",
-    //   link: "#"
-    // },
-    // {
-    //   imageUrl: "/images/hoodie.jpg",
-    //   title: "Hoodies",
-    //   link: "#"
-    // },
-    // {
-    //   imageUrl: "/images/pants.jpg",
-    //   title: "Pants",
-    //   link: "#"
     }
+    // Add more items here when needed
   ];
 
   return (
-    <div className="container mx-auto px-1 py-4 ">
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-8'>
+    <div className="container ">
+       <div>
+       <Banner />
+       <div>
+        <Card/>
+      </div>
+       </div>
+      
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-8 mt-5'>
         {items.map((item, index) => (
-          <div className="w-full max-w-[250px] mx-auto">
+          <div key={index} className="w-full max-w-[250px] mx-auto">
             <Circle 
-              key={index} 
               imageUrl={item.imageUrl} 
               title={item.title}
               link={item.link}
@@ -39,6 +36,17 @@ const App = () => {
           </div>
         ))}
       </div>
+
+      {/* Cart Page */}
+      <Cart />
+
+      {/* login page */}
+      <Login/>
+      {/* signup page */}
+      <SignUp/>
+       
+      
+     
     </div>
   )
 }
