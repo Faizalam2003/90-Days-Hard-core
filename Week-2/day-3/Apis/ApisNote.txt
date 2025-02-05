@@ -1,0 +1,58 @@
+
+ Apis 
+
+
+Undertanding pagination : - 
+Then apis provide the data in the page 
+meaning you need to construct the url with the page number and the page size
+query parameters (_page and _limit) 
+
+
+network request fails for varous reason (server error , connection error , timeout error)
+so we need to handle the error using in the term of try catch block for better user experience
+
+
+
+state management : 
+current page Tracking 
+dymamic loading the page  without refresh the page 
+
+
+
+User Experience:
+loading indicator
+Empty States: Consider what happens if there are no posts available or if the user reaches the end of available pages.
+
+
+
+performance Considerations : 
+Efficient Rendering: Rendering large amounts of data can impact performance. In this case, since we are only fetching 5 posts at a time, performance should be manageable, but it's essential to keep this in mind for larger datasets.
+
+
+Minimizing Network Requests: Each click on the "Next" button results in a network request. It's important to ensure that these requests are efficient and only made when necessary.
+
+
+
+
+
+key point for apis handling  : - 
+API Interaction
+State Management
+User Experience
+Performance Considerations
+
+
+
+
+
+Example Scenario :- 
+Imagine a user visits your webpage and sees an empty list of posts initially. When they click the "Next" button, the application should
+
+
+If at any point there’s an issue with fetching data (like a network error), your application should handle that gracefully by showing an error message instead of crashing or leaving users confused
+
+
+
+
+
+

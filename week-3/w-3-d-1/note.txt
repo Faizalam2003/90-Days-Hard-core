@@ -1,0 +1,7 @@
+
+
+image is nothing but vector 
+image is in the form of pixel coordinates
+
+
+we convert the pixel coordinates to a vector(figure)

@@ -1,0 +1,23 @@
+Learn data preprocessing and visualization techniques
+
+
+we'll use libraries like pandas, for data manipulation 
+ matplotlib, seaborn, scikit-learn for data visualization
+
+
+ :- Data preprocessing and visualization
+
+Step 1: Data Collection
+ For this example, let's assume we have a CSV file named data.csv containing information about sales data, including columns like Date, Sales, and Region.
+
+Step 2: Data Preprocessing
+In this step, we'll load the data into a pandas DataFrame and perform basic cleaning tasks, such as removing missing values and converting data types.
+We'll also create a new column called 'Year' to group data by year.
+
+Step 3: Data Visualization
+In this step, we'll use matplotlib and seaborn to create visualizations of the data.
+We'll explore different types of plots, such as line plots, bar plots, and scatter plots, to understand the trends and patterns in the data.
+We'll also use seaborn to create more advanced visualizations, such as heatmaps and pair plots, to gain more insights into the data.
+
+
+step -5
