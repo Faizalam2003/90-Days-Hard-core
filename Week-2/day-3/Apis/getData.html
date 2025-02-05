@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getData</title>
+  </head>
+  <body>
+    <h2>User Data</h2>
+    <ul id="userList"></ul>
+    <script>
+      async function fetchUserData() {
+        try {
+          const res = await fetch("https://jsonplaceholder.typicode.com/users");
+          // get the data
+          const data = await res.json();
+          // get the ul elemen by id
+          const list = document.getElementById("userList");
+          // loop the data
+          data.forEach((user) => {
+            // create a li element
+            const li = document.createElement("li");
+            li.textContent = user.name;
+            li.textContent = user.email;
+            list.appendChild(li);
+          });
+        } catch (error) {}
+      }
+
+      //  call the function
+      fetchUserData();
+    </script>
+  </body>
+</html>
+
+<!-- step : - -->
+
+1 - get the data from the api 2 - get the ul elemen by id 3 - loop through the
+data and create a list item for each user 4 - append the list item to the ul

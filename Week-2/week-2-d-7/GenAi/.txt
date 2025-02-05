@@ -1,0 +1,13 @@
+
+
+what is Generative Ai 
+
+Generative Ai generate new data based in training sample Generative model can generate images,
+text, videos audio data as output
+
+
+so Generative ai is a very  huge topic
+
+
+ - Generative image model
+ - Generative video model

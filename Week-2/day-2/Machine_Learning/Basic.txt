@@ -1,0 +1,50 @@
+
+
+
+step -1 
+Basic of ai 
+
+1  - what is LLms
+2  - what is token
+3 - How they work 
+4 - what is prompt engineering
+5 - How to optimise output through prompt
+
+
+
+step -2 
+Learn the Ai apis
+
+1 - openai (text to text)
+2  - Dalle-E APi (text to image)
+3 - Whisper (audio to text)
+4 - Llama 2 (text to text)
+5 - Cohere (text to text)
+6 - Bard (text to text)
+7 - Claude (text to text)
+8 - ChatGPT (text to text)
+9 - ChatGPT (audio to text)
+
+
+
+step -3 
+Learn frameworks & tools to build powerfull AI applications
+
+1 - RAG (Retrieval Augmented Generation)
+
+LangChain
+Embeddings
+vector DB
+
+
+project :- 
+Ai chat bot 
+Ai resume builder
+Ai image generator
+Ai code generator
+upload a screenshot of the page and generate the source code(gpt version api )
+
+
+
+---->
+build ai app every week 

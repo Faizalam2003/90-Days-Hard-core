@@ -1,0 +1,97 @@
+1. Python for AI/ML
+
+1.1. NumPy
+
+ -> Purpose: Numerical computing and working with arrays
+
+ ->Topic to learn 
+Array creation (numpy.array, numpy.zeros, numpy.ones)
+Array indexing and slicing
+Mathematical operations (numpy.mean, numpy.std, etc.)
+Broadcasting in NumPy
+Linear algebra (numpy.dot, numpy.linalg.inv)
+Random number generation (numpy.random)
+
+--> Exercises
+Create a 3x3 matrix and calculate its determinant.
+Perform element-wise multiplication between two arrays.
+
+
+
+// ----- > Recommended Resources
+
+Official Documentation: NumPy.org
+
+
+
+
+
+=> what is it 
+ans : - Numpy is a fundamental package for scientific computing in Python.it provides a high-level interface for working with arrays and matrices.
+and a variety of functions for performing common operations on arrays.
+
+# NumPy
+## Overview
+NumPy is a fundamental package for scientific computing in Python. It provides support for arrays, matrices, and a variety of mathematical functions to operate on these data structures.
+
+## Key Concepts
+- **Arrays**: N-dimensional arrays (ndarrays) for efficient storage and manipulation of numerical data.
+- **Mathematical Operations**: Functions for element-wise operations, aggregations, and statistical calculations.
+- **Linear Algebra**: Support for linear algebra operations such as dot products and matrix decompositions.
+
+## Detailed Information
+NumPy is widely used in various fields such as scientific computing, data analysis, and machine learning. It provides an efficient way to perform numerical computations, which is essential for many applications. NumPy arrays are the core data structure in NumPy, and they provide a flexible way to store and manipulate numerical data.
+
+## Example Code
+```python
+import numpy as np
+arr = np.array([1, 2, 3])
+print(arr * 2)  # Output: [2 4 6]
+```
+
+## Resources
+- [NumPy Documentation](https://numpy.org/doc/stable/)
+
+# Pandas
+## Overview
+Pandas is a powerful data manipulation and analysis library. It provides data structures like Series and DataFrames, which are essential for handling structured data.
+
+## Key Concepts
+- **DataFrames**: A 2-dimensional labeled data structure, similar to a spreadsheet or SQL table.
+- **Data Manipulation**: Tools for filtering, grouping, and transforming data.
+- **Handling Missing Data**: Functions to identify and fill or drop missing values.
+
+## Detailed Information
+Pandas is widely used in data analysis and science. It provides an efficient way to handle and manipulate structured data, which is essential for many applications. Pandas DataFrames are the core data structure in Pandas, and they provide a flexible way to store and manipulate structured data.
+
+## Example Code
+```python
+import pandas as pd
+data = {'Name': ['Alice', 'Bob'], 'Age': [25, 30]}
+df = pd.DataFrame(data)
+print(df)
+```
+
+## Resources
+- [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
+
+# Matplotlib
+## Overview
+Matplotlib is a plotting library for Python that provides a way to visualize data through graphs and charts.
+
+## Key Concepts
+- **Plot Types**: Support for various types of plots (line plots, scatter plots, bar charts, etc.).
+- **Customization**: Options to customize plots with labels, titles, legends, and more.
+
+## Detailed Information
+Matplotlib is widely used in data visualization and science. It provides an efficient way to visualize data, which is essential for many applications. Matplotlib provides a wide range of plot types and customization options, making it a popular choice for data visualization.
+
+## Example Code
+```python
+import matplotlib.pyplot as plt
+plt.plot([1, 2, 3], [4, 5, 6])
+plt.show()  # Displays a simple line plot
+```
+
+## Resources
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)

@@ -1,0 +1,23 @@
+task : - 
+Build a simple React app that fetches data from your Node.js API.
+
+
+Learn: Pandas/NumPy for data cleaning (use Kaggle Titanic Dataset)
+Project: Create a Jupyter Notebook analyzing Titanic data and visualize survival rates with Seaborn.
+
+
+
+
+✅ Prerequisites for Pandas/NumPy for Data Cleaning
+1️⃣ Basic Python Knowledge
+   ☠️ Understanding Python syntax (variables, loops, functions)
+   ☠️List, dictionary, tuple (important for working with data)
+   ☠️File handling (reading/writing CSV, JSON files)
+
+
+
+✅ Prerequisites for Seaborn
+1️⃣ Basic Python Knowledge
+   ☠️ Understanding Python syntax (variables, loops, functions)
+   ☠️List, dictionary, tuple (important for working with data)
+   ☠️File handling (reading/writing CSV, JSON files)
